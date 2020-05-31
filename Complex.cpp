@@ -61,14 +61,17 @@ public:
     temp.b=-b;
     return temp;
     }
-    Complex operator^(int a)
+    Complex operator^(int n)
     {
-	Complex temp=this;
-	for(int i=1;i<a;i++)
+	Complex temp;
+	temp.a=a;
+	temp.b=b;
+	Complex temp2(1,0);
+	for(int i=1;i<=n;i++)
 		{
-		temp=temp*(temp)		
+		temp2=temp2*(temp);
 		}
-	return temp;
+	return temp2;
     }
 
     bool operator==(Complex c)//for conjugate
@@ -97,6 +100,16 @@ Complex c1=Complex(3,4);
 c1.print();
 c1=c1^2;
 c1.print();
+
+Complex c2=Complex(3,-4);
+c2.print();
+c2=c2^2;
+c2.print();
+
+Complex c3=Complex(3,4);
+c3.print();
+c3=c3^5;
+c3.print();
 
 
 
