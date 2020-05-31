@@ -64,7 +64,7 @@ public:
     void operator^(int a)
     {
     cout<<"power operator";
-	cout<<"complex2";
+	cout<<"complex21";
 
     }
 
