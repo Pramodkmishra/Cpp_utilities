@@ -65,6 +65,8 @@ public:
     {
     cout<<"power operator";
 
+	cout<<"complex21";
+
     }
 
     bool operator==(Complex c)//for conjugate
