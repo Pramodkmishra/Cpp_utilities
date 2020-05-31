@@ -63,7 +63,7 @@ public:
     }
     void operator^(int a)
     {
-    cout<<"power";
+    cout<<"power operator";
     }
 
     bool operator==(Complex c)//for conjugate
