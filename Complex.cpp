@@ -63,6 +63,12 @@ public:
     }
     Complex operator^(int a)
     {
+	Complex temp=this;
+	for(int i=1;i<a;i++)
+		{
+		temp=temp*(temp)		
+		}
+	return temp;
     }
 
     bool operator==(Complex c)//for conjugate
@@ -83,4 +89,16 @@ public:
     cout<<a<<" - "<<(-1*b)<<"i"<<endl;
     }
 };
+
+
+int main()
+{
+Complex c1=Complex(3,4);
+c1.print();
+c1=c1^2;
+c1.print();
+
+
+
+}
 
