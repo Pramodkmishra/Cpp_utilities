@@ -61,12 +61,8 @@ public:
     temp.b=-b;
     return temp;
     }
-    void operator^(int a)
+    Complex operator^(int a)
     {
-    cout<<"power operator";
-
-	cout<<"complex21";
-
     }
 
     bool operator==(Complex c)//for conjugate
