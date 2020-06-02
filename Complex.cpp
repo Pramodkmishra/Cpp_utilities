@@ -1,7 +1,7 @@
 //for complex arithmetic
 
 #include<iostream>
-
+#include<math.h>
 
 using namespace std;
 class Complex
@@ -61,6 +61,7 @@ public:
     temp.b=-b;
     return temp;
     }
+
     Complex operator^(int n)
     {
 	Complex temp;
@@ -91,8 +92,12 @@ public:
     else
     cout<<a<<" - "<<(-1*b)<<"i"<<endl;
     }
+	float getModules();
 };
-
+float Complex::getModules()
+{
+return sqrt(a*a + b*b);
+}
 
 int main()
 {
@@ -111,7 +116,9 @@ c3.print();
 c3=c3^5;
 c3.print();
 
+Complex c4=Complex(3,5);
 
+cout<<c4.getModules();
 
 }
 
